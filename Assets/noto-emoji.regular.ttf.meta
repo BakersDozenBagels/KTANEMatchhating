@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1f7ea98f098786f44aa1c8946124dd71
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 450
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Noto Emoji
+  fontNames:
+  - Noto Emoji
+  fallbackFontReferences: []
+  customCharacters: "\u2660\u2665\u2663\u2666\u2648\u2649\u264A\u264B\u264C\u264D\u264E\u264F\u2650\u2651\u2652\u2653"
+  fontRenderingMode: 0
+  ascentCalculationMode: 0
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
