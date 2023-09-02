@@ -9,8 +9,11 @@ using Random = UnityEngine.Random;
 
 public class MatchhatingScript : MonoBehaviour
 {
-    [SerializeField]
     private Decoration[] _lineDecorations;
+    [SerializeField]
+    private GameObject[] _lineDecorationsObjects;
+    [SerializeField]
+    private Color[] _lineDecorationsColors;
     [SerializeField]
     private GameObject _lineBase, _lineCap, _prefabHolder, _skaia;
     [SerializeField]
@@ -40,7 +43,9 @@ public class MatchhatingScript : MonoBehaviour
 
     private void Start()
     {
-        _prefabHolder.SetActive(false);
+        _lineDecorations = Enumerable.Range(0, 4).Select(i => new Decoration() { Color = _lineDecorationsColors[i], Cap = _lineDecorationsObjects[i] }).ToArray();
+
+        _prefabHolder.transform.localScale = Vector3.zero;
         foreach (var c in _starSignButtons)
         {
             c.OnInteract += () => { PressStarSign(c.gameObject); return false; };
